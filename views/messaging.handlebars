@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 mb-3 fs-3">Chat</div>
+    <div class="col-12">
+      <form class="row" name="messages">
+        <div class="col-12 mb-3">
+          <div
+            id="messages"
+            style="height: 250px; overflow-x: hidden; overflow-y: auto; background-color: #ececec; border-radius: .375rem; padding: .75rem; font-size: .75rem"
+          ></div>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="avatar" class="form-label">Avatar</label>
+          <input type="text" class="form-control" id="avatar" name="avatar" />
+          <div class="invalid-feedback">Enter a valid avatar</div>
+        </div>
+        <div class="col-6 mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="text" class="form-control" id="email" name="email" />
+          <div class="invalid-feedback">Enter a valid email</div>
+        </div>
+        <div class="col-12 mb-3">
+          <label for="message" class="form-label">Mensaje</label>
+          <input type="text" class="form-control" id="message" name="message" />
+          <div class="invalid-feedback">Enter your message</div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/scripts/common.js"></script>

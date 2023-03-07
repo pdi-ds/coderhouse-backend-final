@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <div class="row mb-5">
+    <div class="col-12 mb-3 fs-3">Sign up</div>
+    {{#if error}}
+      <div class="col-12 mb-3">
+        <div class="alert alert-danger" role="alert">
+          <span>Check the entered fields</span>
+        </div>
+      </div>
+    {{/if}}
+    <div class="col-12">
+      <form method="post" action="/signup" name="login">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" name="name" />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email" />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            name="password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Sing up</button>
+        <a href="/login" class="btn btn-default">Login in</a>
+      </form>
+    </div>
+  </div>
+</div>
